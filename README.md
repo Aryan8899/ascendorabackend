@@ -1,15 +1,5 @@
-# Ascendora Backend
+# Ascendora Backend (API only)
 
-Receives candidate form submissions and emails the details + resume.
+`POST /api/candidates` (multipart/form-data) -> emails form details + resume.
 
-**Endpoint:** `POST /api/candidates` (multipart/form-data)
-
-## Env variables
-See `.env.example`. Add the same variables in Vercel -> Project -> Settings -> Environment Variables.
-
-## Run locally
-```
-npm install
-cp .env.example .env.local   # then fill SMTP_PASS
-npm run dev
-```
+Set env variables from `.env.example` in Vercel -> Settings -> Environment Variables.
